@@ -1,6 +1,6 @@
 # Neon Genesis Evangelion Pomodoro Timer
 
-## [▶️ Live Demo](https://Giogianni/neon-genesis-pomodoro-timer.github.io/)
+## [▶️ Live Demo](https://Giogioanni/neon-genesis-pomodoro-timer.github.io/)
 
 A stylish Pomodoro timer with Neon Genesis Evangelion theme, featuring:
 
