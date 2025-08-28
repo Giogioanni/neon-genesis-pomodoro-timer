@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Timer</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- NGE font for the music icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <img src="assets/Neon Genesis Logo.png" alt="Neon Genesis Logo" id="logo">
+  <div class="container">
+    <h1>Pomodoro Timer</h1>
+    <div id="timer" class="editable" contenteditable="false">25:00</div>
+    <div class="buttons">
+      <button id="start">Start</button>
+      <button id="stop">Stop</button>
+      <button id="reset">Reset</button>
+    </div>
+    <div id="celebration" class="hidden">🎉 Time's Up! Take a Break ! 🎉</div>
+    
+    <!-- Music control button -->
+    <div id="music-control">
+      <button id="music-toggle">
+        <i class="fas fa-volume-up"></i>
+      </button>
+    </div>
+    
+    <!-- Credits section -->
+    <div class="credits">
+      Music & Visuals: 
+      <a href="https://www.youtube.com/watch?v=pjiKGrLbTE8" target="_blank">
+        Kijugo - a cruel angel's thesis
+      </a>
+    </div>
+    
+    <!-- Hidden audio element for music -->
+    <audio id="lofi-music" loop>
+      <source src="assets/NGELofi.mp3" type="audio/mp3">
+    </audio>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

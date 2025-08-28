@@ -1,0 +1,187 @@
+@font-face {
+  font-family: 'EPSON True Regular';
+  src: url('assets/NGEFont.TTF') format('truetype');
+  font-weight: medium;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'EPSON True Regular';
+  color: white;
+  text-align: center;
+  background: url("assets/Loopinggif.gif") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.7);
+}
+
+#logo {
+  display: block;
+  margin: 15px auto 0 auto;
+  width: 350px;   /* Can adjust size as needed */
+  height: auto;
+}
+
+.container {
+  background: rgba(126, 116, 173, 0.184);
+  border-radius: 15px;
+  padding: 40px;
+  margin: 20px auto;
+  width: 70%;
+  max-width: 700px;
+  box-shadow: 
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 15px #0ff,
+    0 0 20px #0ff,
+    0 0 25px #0ff,
+    0 0 30px #0ff,
+    0 0 35px #0ff;
+  animation: glitter 2.5s infinite alternate;
+  position: relative; /* Position the music button relative to container */
+}
+
+@keyframes glitter {
+  0% {
+    box-shadow: 
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 15px #7e74ad,
+      0 0 20px #c79714,
+      0 0 25px #b47c28;
+  }
+  100% {
+    box-shadow: 
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 30px #f0f,
+      0 0 40px #0ff,
+      0 0 50px #0ff;
+  }
+}
+
+h1 {
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 
+    0 0 5px white,
+    0 0 10px #7e74ad;
+}
+
+#timer {
+  font-size: 5em; 
+  font-weight: bold;
+  text-shadow: 
+    0 0 10px white,
+    0 0 20px #7e74ad,
+    0 0 30px #7e74ad;
+  letter-spacing: 2px;
+  margin: 20px 0;
+}
+
+#timer.editable {
+  cursor: pointer;
+}
+
+#timer.editable:hover::after {
+  content: " (double-click to edit)";
+  font-size: 0.3em;
+  opacity: 0.7;
+  display: block;
+  margin-top: -10px;
+}
+
+#timer[contenteditable="true"] {
+  border-bottom: 2px solid #0ff;
+  outline: none;
+}
+
+button {
+  padding: 15px 30px;
+  margin: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.4);
+  color: white;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+}
+
+button:hover {
+  background: #444;
+  color: white;
+}
+
+#celebration {
+  margin-top: 20px;
+  font-size: 2em;
+  font-weight: bold;
+  color: yellow;
+  text-shadow:
+    0 0 10px yellow,
+    0 0 20px orange,
+    0 0 30px red;
+}
+
+.hidden {
+  display: none;
+}
+
+#music-control {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+#music-toggle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 18px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px rgba(30, 37, 31, 0.5);
+}
+
+#music-toggle:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(1.1);
+}
+
+#music-toggle.playing {
+  background: rgba(3, 8, 4, 0.4);
+}
+
+.credits {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 0.8em;
+  opacity: 0.7;
+  text-align: right;
+  max-width: 300px;
+}
+
+.credits a {
+  color: white;
+  text-decoration: underline;
+  transition: all 0.3s ease;
+}
+
+.credits a:hover {
+  color: #0ff;
+  text-shadow: 0 0 5px #0ff;
+}
