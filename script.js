@@ -31,11 +31,12 @@ document.addEventListener('DOMContentLoaded', () => {
           notification.style.position = 'fixed';
           notification.style.bottom = '20px';
           notification.style.right = '20px';
-          notification.style.background = 'rgba(1, 255, 56, 0.3)';
+          notification.style.background = 'transparent';
           notification.style.padding = '10px';
-          notification.style.borderRadius = '5px';
+          notification.style.borderRadius = '0';
           notification.style.zIndex = '1000';
           notification.style.transition = 'opacity 0.5s ease';
+          notification.style.textShadow = '0 0 10px white, 0 0 15px #7e74ad';
           
           document.body.appendChild(notification);
           
